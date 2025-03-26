@@ -6,8 +6,9 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->options('(:any)', function() {
-    return $this->response->setStatusCode(200);
-});
-$routes->resource('auth');
+$routes->options('(:any)', 'Auth::$1', ['filter' => 'cors']); 
+// $routes->resource('auth');
 
+$routes->resource('auth', ['filter' => 'cors']);
+
+$routes->post('auth/login', 'Auth::login');

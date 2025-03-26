@@ -10,6 +10,7 @@ class Auth extends ResourceController
 
     protected $modelName = 'App\Models\Account';
     protected $format    = 'json';
+
     /**
      * Return an array of resource objects, themselves in array format.
      *
@@ -55,6 +56,8 @@ class Auth extends ResourceController
      */
     public function create()
     {
+        $json = $this->request->getJSON();
+
         $rules = [
             'username' => 'required|is_unique[accounts.username]',
             'password' => 'required|min_length[6]',
@@ -65,8 +68,8 @@ class Auth extends ResourceController
         }
 
         $data = [
-            'username' => $this->request->getPost('username'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'username' =>  $json->username,
+            'password' => password_hash($json->password, PASSWORD_DEFAULT),
         ];
 
         $this->model->insert($data);
@@ -76,6 +79,27 @@ class Auth extends ResourceController
             'message' => 'Account successfully registered',
             'data' => $data
         ]);
+    }
+
+    public function login()
+    {
+        $json = $this->request->getJSON();
+        
+        $query = $this->model->query('SELECT * FROM accounts WHERE username = ?', [$json->username]);
+
+        $acc = $query->getRow();
+
+        if (!$acc) {
+            return $this->response->setJSON(['error' => 'User not found'])->setStatusCode(404);
+        }
+
+        if (!password_verify($json->password, $acc->password)) {
+            return $this->response->setJSON(['error' => 'Invalid password'])->setStatusCode(401);
+        }
+
+        // otentikasi JWT deliberately unapplied, I'm just junior :(
+        // for demo application with all the functions, please visit my portofolio web in miscellaneous
+        return $this->response->setJSON(['message' => 'Login successful', 'user' => $acc]);
     }
 
     /**

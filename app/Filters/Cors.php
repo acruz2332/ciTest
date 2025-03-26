@@ -25,8 +25,13 @@ class Cors implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        if ($request->getMethod() === 'options') {
-            return $this->respondWithCors(new \CodeIgniter\HTTP\Response());
+        if ($request->getMethod(true) === 'OPTIONS') {
+            $response = service('response');
+            $response->setHeader('Access-Control-Allow-Origin', '*');
+            $response->setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+            $response->setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+            $response->setHeader('Access-Control-Allow-Credentials', 'true');
+            return $response->setStatusCode(200);
         }
 
         return $request;
@@ -46,16 +51,10 @@ class Cors implements FilterInterface
      */
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        return $this->respondWithCors($response);
-    }
-
-    private function respondWithCors($response)
-    {
-        $response->setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // React app's origin
+        $response->setHeader('Access-Control-Allow-Origin', '*');
         $response->setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
         $response->setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
-        $response->setHeader('Access-Control-Allow-Credentials', 'true'); // If using cookies/auth
-
+        $response->setHeader('Access-Control-Allow-Credentials', 'true');
         return $response;
     }
 }
