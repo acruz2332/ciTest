@@ -1,0 +1,1247 @@
+ERROR - 2025-03-26 08:59:21 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 08:59:41 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:00:33 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:02:19 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:03:58 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:04:22 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:05:35 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:12:56 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:13:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:15:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:16:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:16:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:17:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:18:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:19:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:19:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:19:53 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:20:31 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:20:51 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:20:58 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:21:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:23:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:24:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:25:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:26:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:27:10 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:27:13 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:27:17 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-26 09:27:27 --> Error connecting to the database: mysqli_sql_exception: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Plugin 'mysql_native_password' is not loaded in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1525): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(1545): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(758): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MigrationRunner.php(162): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-26 09:44:52 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(63): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:45:28 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(63): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:45:33 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(63): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:46:22 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(63): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:46:41 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:47:35 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:48:35 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:50:21 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:50:31 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:50:38 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(72): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:51:31 --> Error: Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+[Method: POST, Route: auth]
+in APPPATH\Controllers\Auth.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:52:01 --> Error: Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+[Method: POST, Route: auth]
+in APPPATH\Controllers\Auth.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:52:06 --> Error: Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+[Method: POST, Route: auth]
+in APPPATH\Controllers\Auth.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:54:28 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(73): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:54:39 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Account"
+[Method: POST, Route: auth]
+in SYSTEMPATH\Model.php on line 822.
+ 1 SYSTEMPATH\Model.php(822): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Account')
+ 2 SYSTEMPATH\BaseModel.php(820): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Auth.php(73): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+ERROR - 2025-03-26 09:56:09 --> mysqli_sql_exception: Column 'username' cannot be null in C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\laragon\www\codeigniter4-framework-96a1e60\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\laragon\www\codeigniter4-framework-96a1e60\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\codeigniter4-framework-96a1e60\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\codeigniter4-framework-96a1e60\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\codeigniter4-framework-96a1e60\app\Controllers\Auth.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\codeigniter4-framework-96a1e60\system\CodeIgniter.php(933): App\Controllers\Auth->create()
+#9 C:\laragon\www\codeigniter4-framework-96a1e60\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\codeigniter4-framework-96a1e60\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\codeigniter4-framework-96a1e60\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\codeigniter4-framework-96a1e60\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\laragon\www\codeigniter4-framework-96a1e60\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#15 {main}
+CRITICAL - 2025-03-26 09:56:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'username' cannot be null
+[Method: POST, Route: auth]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Auth.php(73): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:56:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `accounts` (`username`, `password`) VALUES (NULL, \'$2y$10$TzVBNSXUfGavZj88rCF.6O9alR0q7iGHCuo4ksHrz8GlfjP/R0KQi\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `accounts` (`username`, `password`) VALUES (NULL, \'$2y$10$TzVBNSXUfGavZj88rCF.6O9alR0q7iGHCuo4ksHrz8GlfjP/R0KQi\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Auth.php(73): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 09:56:09 --> [Caused by] mysqli_sql_exception: Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `accounts` (`username`, `password`) VALUES (NULL, \'$2y$10$TzVBNSXUfGavZj88rCF.6O9alR0q7iGHCuo4ksHrz8GlfjP/R0KQi\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `accounts` (`username`, `password`) VALUES (NULL, \'$2y$10$TzVBNSXUfGavZj88rCF.6O9alR0q7iGHCuo4ksHrz8GlfjP/R0KQi\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `accounts` (`username`, `password`) VALUES (NULL, \'$2y$10$TzVBNSXUfGavZj88rCF.6O9alR0q7iGHCuo4ksHrz8GlfjP/R0KQi\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `accounts` (`username`, `password`) VALUES (:username:, :password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(73): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->create()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 10:50:26 --> ErrorException: Undefined property: CodeIgniter\Router\RouteCollection::$response
+[Method: OPTIONS, Route: auth]
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Router\\RouteCollection::$response', 'C:\\laragon\\www\\codeigniter4-framework-96a1e60\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}('auth')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 10:50:42 --> ErrorException: Undefined property: CodeIgniter\Router\RouteCollection::$response
+[Method: OPTIONS, Route: auth]
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Router\\RouteCollection::$response', 'C:\\laragon\\www\\codeigniter4-framework-96a1e60\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}('auth')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 10:50:42 --> ErrorException: Undefined property: CodeIgniter\Router\RouteCollection::$response
+[Method: OPTIONS, Route: auth]
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Router\\RouteCollection::$response', 'C:\\laragon\\www\\codeigniter4-framework-96a1e60\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}('auth')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 10:51:04 --> ErrorException: Undefined property: CodeIgniter\Router\RouteCollection::$response
+[Method: OPTIONS, Route: auth]
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Router\\RouteCollection::$response', 'C:\\laragon\\www\\codeigniter4-framework-96a1e60\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}('auth')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
+CRITICAL - 2025-03-26 10:52:21 --> ErrorException: Undefined property: CodeIgniter\Router\RouteCollection::$response
+[Method: OPTIONS, Route: auth]
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Router\\RouteCollection::$response', 'C:\\laragon\\www\\codeigniter4-framework-96a1e60\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}('auth')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-96a1e60\\public\\index.php')
